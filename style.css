@@ -1,0 +1,434 @@
+/* =========================================================
+   RESET
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+
+  background: #f7fafc;
+  color: #1a202c;
+
+  font-family:
+    "Segoe UI",
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
+
+  line-height: 1.5;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-height: 80px;
+
+  padding: 20px 50px;
+
+  background: #0d233a;
+  color: #fff;
+}
+
+.logo {
+  font-family:
+    Impact,
+    "Arial Black",
+    sans-serif;
+
+  font-size: 28px;
+  font-weight: 900;
+
+  line-height: 1;
+
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: #3182ce;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: #fff;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  padding: 6px 0;
+}
+
+.nav-links a:hover {
+  color: #63b3ed;
+}
+
+.nav-links a:focus-visible,
+.cta-button:focus-visible,
+.agendar-btn:focus-visible {
+  outline: 3px solid #63b3ed;
+  outline-offset: 3px;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero-section {
+  padding: 60px 50px;
+
+  text-align: center;
+
+  background: #edf2f7;
+}
+
+.hero-section h1 {
+  max-width: 1000px;
+
+  margin: 0 auto 15px;
+
+  color: #0d233a;
+
+  font-size: clamp(28px, 4vw, 34px);
+  font-weight: 800;
+
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  max-width: 850px;
+
+  margin: 0 auto 30px;
+
+  color: #4a5568;
+
+  font-size: 18px;
+}
+
+.hero-picture {
+  display: block;
+
+  width: min(1100px, 100%);
+
+  margin: 0 auto 25px;
+}
+
+.hero-image {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  border-radius: 8px;
+}
+
+.cta-button {
+  display: inline-block;
+
+  padding: 12px 30px;
+
+  background: #3182ce;
+  color: #fff;
+
+  border-radius: 5px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background: #2b6cb0;
+}
+
+
+/* =========================================================
+   SERVIÇOS
+   ========================================================= */
+
+.services-section {
+  width: 100%;
+  max-width: 1280px;
+
+  margin: 0 auto;
+
+  padding: 50px;
+}
+
+.services-section h2 {
+  margin: 0 0 30px;
+
+  color: #0d233a;
+
+  font-size: 28px;
+  line-height: 1.2;
+
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 25px;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+
+  padding: 20px;
+
+  background: #fff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.service-card picture {
+  display: block;
+
+  width: 100%;
+
+  margin-bottom: 15px;
+}
+
+.service-card img {
+  display: block;
+
+  width: 100%;
+  height: 160px;
+
+  object-fit: cover;
+
+  border-radius: 4px;
+}
+
+.service-card h3 {
+  margin: 0 0 10px;
+
+  color: #0d233a;
+
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.service-card p {
+  margin: 0 0 15px;
+
+  color: #4a5568;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+.price {
+  display: block;
+
+  margin-top: auto;
+  margin-bottom: 15px;
+
+  color: #2b6cb0;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.agendar-btn {
+  align-self: flex-start;
+
+  min-height: 32px;
+
+  padding: 4px 12px;
+
+  border: 0;
+  border-radius: 3px;
+
+  background: #2b6cb0;
+  color: #fff;
+
+  font-family: inherit;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.agendar-btn:hover {
+  background: #225891;
+}
+
+.agendar-btn:focus-visible {
+  outline-color: #225891;
+}
+
+
+/* =========================================================
+   ÂNCORAS
+   ========================================================= */
+
+.anchor {
+  scroll-margin-top: 20px;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+  margin-top: 40px;
+
+  padding: 20px;
+
+  background: #0d233a;
+  color: #fff;
+
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  #header {
+    padding: 20px 30px;
+  }
+
+  .hero-section {
+    padding: 50px 30px;
+  }
+
+  .services-section {
+    padding: 50px 30px;
+  }
+
+  .services-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+/* =========================================================
+   CELULAR
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  #header {
+    flex-direction: column;
+
+    gap: 18px;
+
+    padding: 20px;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .hero-section {
+    padding: 40px 20px;
+  }
+
+  .hero-section h1 {
+    font-size: 28px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .services-section {
+    padding: 40px 20px;
+  }
+
+  .services-section h2 {
+    font-size: 25px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card img {
+    height: auto;
+
+    aspect-ratio: 3 / 2;
+  }
+
+  footer {
+    margin-top: 20px;
+  }
+}
+
+
+/* =========================================================
+   ACESSIBILIDADE
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+}
